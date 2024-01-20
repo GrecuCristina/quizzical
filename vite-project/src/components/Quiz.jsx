@@ -137,8 +137,8 @@ export default function Quiz() {
           ) : (
             <div className="new-game-container">
               <p>
-                `You scored {getUsersTotalNumberOfCorrectAnswers()}/
-                {questions.length} correct answers`
+                You scored {getUsersTotalNumberOfCorrectAnswers()}/
+                {questions.length} correct answers
               </p>
               <button
                 className="btn check-btn"
