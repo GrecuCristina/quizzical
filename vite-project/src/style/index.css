@@ -76,12 +76,18 @@ main {
   font-size: 16px;
 }
 .answer {
+  cursor: pointer;
   border: 0.8px solid #4d5b9e;
   border-radius: 8px;
   padding: 4px 20px;
   font-size: 11px;
   font-family: "Inter";
   font-weight: 500;
+  /* not to select the text inside the answer**/
+  user-select: none;
+}
+button {
+  user-select: none;
 }
 .checked-answer {
   border: 0;
@@ -134,4 +140,7 @@ main {
   font-family: "Inter";
   font-size: 13px;
   font-weight: 700;
+}
+.disabled {
+  pointer-events: none;
 }

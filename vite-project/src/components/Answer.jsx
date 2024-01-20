@@ -9,6 +9,7 @@ export default function Answer(props) {
         wrong: props.wrong,
         correct: props.correct,
         "checked-answer": props.checked,
+        disabled: props.showCorrectAnswers,
       })}
     >
       {props.text}

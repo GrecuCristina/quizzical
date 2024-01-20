@@ -4,7 +4,11 @@ export default function Question(props) {
   const answersEl = props.question.answers.map((answer) => {
     return (
       <Answer
-        onClick={() => props.selectAnswer(props.question.id, answer.id)}
+        showCorrectAnswers={props.showCorrectAnswers}
+        onClick={() =>
+          !props.showCorrectAnswers &&
+          props.selectAnswer(props.question.id, answer.id)
+        }
         question={props.question}
         key={answer.id}
         text={answer.text}
